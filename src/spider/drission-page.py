@@ -1,5 +1,5 @@
 from DrissionPage import ChromiumPage
-from DrissionPage import ChromiumOptions
+from DrissionPage import SessionPage
 
 """
 DrissionPage的常见工具
@@ -36,15 +36,39 @@ DrissionPage的常见工具
 chrome_executable_file = r'C:/Program Files/Google/Chrome/Application/chrome.exe'
 # ChromiumOptions().set_browser_path(chrome_executable_file).save()
 
+# 操控浏览器
+def operate_chromium_page():
+    # 创建浏览器控制对象
+    page = ChromiumPage()
 
-# 导入浏览器
-page = ChromiumPage()
-page.get('https://gitee.com/login')
+    # 访问参数中的地址
+    page.get('https://gitee.com/login')
 
-user_name_input = page.ele("#user_login")
+    # 查找元素，返回一个ChromiumElement对象 #:根据ID查找[其中ele方法已经内置了等待，如果元素未加载他会执行等待直到元素出现为止，默认超时时间10s]
+    user_name_input = page.ele("#user_login")
 
-user_name_input.input('')
+    # 对元素输入文本
+    user_name_input.input('18922420401')
 
-page.ele('#user_password').input('')
+    # 链式操作
+    page.ele('#user_password').input('wmj18476723899')
 
-page.ele('@value=登 录').chick()
+    # 获取登录按钮，此次使用的@为按元素名查找
+    page.ele('@value=登 录').click()
+
+
+# 收发数据包
+def seeding_and_receiving_data_packets():
+    # 打开SessionPage
+    page = SessionPage()
+
+    # 遍历三页CSDN的开源项目页面
+    for i in range(1, 4):
+        # 打开开源项目页面，以循环状态为目标页
+        page.get(f'https://gitee.com/explore/all?page={i}')
+        # 从页面中获取所有项目名称标签
+        links = page.eles('.title project-namespace-path')
+        # 变例项目名称a标签
+        for link in links:
+            # 打印标签
+            print(link)
