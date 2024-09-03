@@ -1,5 +1,7 @@
 from DrissionPage import ChromiumPage
 from DrissionPage import SessionPage
+from DrissionPage import ChromiumOptions
+from DrissionPage import WebPage
 
 """
 DrissionPage的常见工具
@@ -34,7 +36,8 @@ DrissionPage的常见工具
 
 # 手动选择浏览器可执行文件路径
 chrome_executable_file = r'C:/Program Files/Google/Chrome/Application/chrome.exe'
-# ChromiumOptions().set_browser_path(chrome_executable_file).save()
+ChromiumOptions().set_browser_path(chrome_executable_file).save()
+
 
 # 操控浏览器
 def operate_chromium_page():
@@ -62,7 +65,7 @@ def seeding_and_receiving_data_packets():
     # 打开SessionPage
     page = SessionPage()
 
-    # 遍历三页CSDN的开源项目页面
+    # 遍历三页Gitee的开源项目页面
     for i in range(1, 4):
         # 打开开源项目页面，以循环状态为目标页
         page.get(f'https://gitee.com/explore/all?page={i}')
@@ -72,3 +75,21 @@ def seeding_and_receiving_data_packets():
         for link in links:
             # 打印标签
             print(link)
+
+
+# 模式切换：通常用于应付登录检查很严格的网站，可以用浏览器处理登录在转换模式用收发数据包的形式去采集数据
+def switch_page_mode():
+    page = WebPage()
+    page.get('https://gitee.com/explore/all')
+
+    page.change_mode()
+
+    items = page.ele('.ui relaxed divided items explore-repo__list').eles('.item')
+    for item in items:
+        print(item('t:h3').text)
+        print(item('.project-desc mb-1').text)
+        print()
+
+
+switch_page_mode()
+
