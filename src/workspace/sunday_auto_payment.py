@@ -8,7 +8,7 @@ erp_ali_payment_api = 'http://192.168.98.21:39095/pss/api/purchase/getAliPayment
 erp_ali_payment_api_local = 'http://localhost:8080/bessky_pss_web/api/purchase/getAliPaymentUrl'
 
 
-# 自动获取付款链接，进行账期付款
+# 自动获取付款链接，进行账期付款 pyinstaller.exe -F -w .\sunday_auto_payment.py -i icon.png
 def executor():
     print('正在执行自动付款...')
     response = requests.get(erp_ali_payment_api_local)
