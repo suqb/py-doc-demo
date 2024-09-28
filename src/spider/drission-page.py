@@ -2,6 +2,7 @@ from DrissionPage import ChromiumPage
 from DrissionPage import SessionPage
 from DrissionPage import ChromiumOptions
 from DrissionPage import WebPage
+from DrissionPage import Chromium
 
 """
 DrissionPage的常见工具
@@ -91,5 +92,7 @@ def switch_page_mode():
         print()
 
 
-switch_page_mode()
+
+
+
 

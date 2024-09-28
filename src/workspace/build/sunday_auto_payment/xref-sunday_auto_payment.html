@@ -818,7 +818,8 @@ imported by:
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/__init__.py" type="text/plain"><tt>DrissionPage</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
-    <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
  &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
@@ -853,7 +854,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
 
   </div>
@@ -867,14 +868,18 @@ imported by:
 imports:
     <a href="#DownloadKit">DownloadKit</a>
  &#8226;   <a href="#DrissionPage._base">DrissionPage._base</a>
+ &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
  &#8226;   <a href="#DrissionPage._elements.none_element">DrissionPage._elements.none_element</a>
+ &#8226;   <a href="#DrissionPage._functions.elements">DrissionPage._functions.elements</a>
  &#8226;   <a href="#DrissionPage._functions.locator">DrissionPage._functions.locator</a>
  &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
  &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
 
   </div>
@@ -883,7 +888,7 @@ imported by:
     <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
@@ -892,27 +897,41 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="DrissionPage._base.browser"></a>
-  <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_base/browser.py" type="text/plain"><tt>DrissionPage._base.browser</tt></a>
+  <a name="DrissionPage._base.chromium"></a>
+  <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_base/chromium.py" type="text/plain"><tt>DrissionPage._base.chromium</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#DrissionPage._base">DrissionPage._base</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
+ &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
+ &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
+ &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
  &#8226;   <a href="#DrissionPage._units.downloader">DrissionPage._units.downloader</a>
+ &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
+ &#8226;   <a href="#DrissionPage._units.states">DrissionPage._units.states</a>
+ &#8226;   <a href="#DrissionPage._units.waiter">DrissionPage._units.waiter</a>
  &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#psutil">psutil</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#websocket">websocket</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
+    <a href="#DrissionPage">DrissionPage</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
 
   </div>
 
@@ -929,6 +948,7 @@ imports:
  &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#requests.adapters">requests.adapters</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#time">time</a>
  &#8226;   <a href="#websocket">websocket</a>
@@ -936,7 +956,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
 
   </div>
@@ -975,7 +995,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage">DrissionPage</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
   </div>
@@ -1011,6 +1031,7 @@ imported by:
 imports:
     <a href="#DrissionPage._configs">DrissionPage._configs</a>
  &#8226;   <a href="#DrissionPage._configs.options_manage">DrissionPage._configs.options_manage</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#pathlib">pathlib</a>
@@ -1021,8 +1042,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage">DrissionPage</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
- &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
+ &#8226;   <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
   </div>
 
@@ -1150,6 +1172,7 @@ imports:
 imported by:
     <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
  &#8226;   <a href="#DrissionPage._functions.by">DrissionPage._functions.by</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._functions.elements">DrissionPage._functions.elements</a>
  &#8226;   <a href="#DrissionPage._functions.keys">DrissionPage._functions.keys</a>
  &#8226;   <a href="#DrissionPage._functions.locator">DrissionPage._functions.locator</a>
@@ -1184,7 +1207,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
 
   </div>
 
@@ -1207,19 +1230,48 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="DrissionPage._functions.cookies"></a>
+  <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_functions/cookies.py" type="text/plain"><tt>DrissionPage._functions.cookies</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#DrissionPage._functions">DrissionPage._functions</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#tldextract">tldextract</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
+ &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
+ &#8226;   <a href="#DrissionPage._units.cookies_setter">DrissionPage._units.cookies_setter</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="DrissionPage._functions.elements"></a>
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_functions/elements.py" type="text/plain"><tt>DrissionPage._functions.elements</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#DrissionPage._elements.none_element">DrissionPage._elements.none_element</a>
  &#8226;   <a href="#DrissionPage._functions">DrissionPage._functions</a>
+ &#8226;   <a href="#DrissionPage._functions.locator">DrissionPage._functions.locator</a>
  &#8226;   <a href="#time">time</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
+    <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
 
   </div>
 
@@ -1232,6 +1284,7 @@ imported by:
 imports:
     <a href="#DrissionPage._functions">DrissionPage._functions</a>
  &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
+ &#8226;   <a href="#platform">platform</a>
 
   </div>
   <div class="import">
@@ -1259,6 +1312,7 @@ imported by:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
+ &#8226;   <a href="#DrissionPage._functions.elements">DrissionPage._functions.elements</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._units.waiter">DrissionPage._units.waiter</a>
 
@@ -1277,14 +1331,17 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._elements.none_element">DrissionPage._elements.none_element</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
  &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
- &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
  &#8226;   <a href="#DrissionPage._units.waiter">DrissionPage._units.waiter</a>
 
   </div>
@@ -1316,10 +1373,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
 
   </div>
@@ -1334,13 +1390,11 @@ imports:
     <a href="#DataRecorder.tools">DataRecorder.tools</a>
  &#8226;   <a href="#DrissionPage._functions">DrissionPage._functions</a>
  &#8226;   <a href="#base64">base64</a>
- &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#html">html</a>
- &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#tldextract">tldextract</a>
+ &#8226;   <a href="#requests.structures">requests.structures</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
 
   </div>
@@ -1354,10 +1408,8 @@ imported by:
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
- &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
  &#8226;   <a href="#DrissionPage._units.actions">DrissionPage._units.actions</a>
  &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
- &#8226;   <a href="#DrissionPage._units.cookies_setter">DrissionPage._units.cookies_setter</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
  &#8226;   <a href="#DrissionPage._units.states">DrissionPage._units.states</a>
 
@@ -1379,6 +1431,7 @@ imported by:
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
@@ -1396,12 +1449,15 @@ imports:
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.none_element">DrissionPage._elements.none_element</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
+ &#8226;   <a href="#DrissionPage._functions.elements">DrissionPage._functions.elements</a>
  &#8226;   <a href="#DrissionPage._functions.locator">DrissionPage._functions.locator</a>
  &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._units.actions">DrissionPage._units.actions</a>
+ &#8226;   <a href="#DrissionPage._units.console">DrissionPage._units.console</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#DrissionPage._units.rect">DrissionPage._units.rect</a>
  &#8226;   <a href="#DrissionPage._units.screencast">DrissionPage._units.screencast</a>
@@ -1421,7 +1477,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
 
@@ -1435,6 +1492,7 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
+ &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
@@ -1462,21 +1520,13 @@ imported by:
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_pages/chromium_page.py" type="text/plain"><tt>DrissionPage._pages.chromium_page</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
- &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
- &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
- &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
  &#8226;   <a href="#DrissionPage._units.waiter">DrissionPage._units.waiter</a>
- &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
- &#8226;   <a href="#pathlib">pathlib</a>
- &#8226;   <a href="#requests">requests</a>
- &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#time">time</a>
 
   </div>
@@ -1494,13 +1544,10 @@ imported by:
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_pages/chromium_tab.py" type="text/plain"><tt>DrissionPage._pages.chromium_tab</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
- &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
- &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
+    <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
  &#8226;   <a href="#DrissionPage._units.waiter">DrissionPage._units.waiter</a>
  &#8226;   <a href="#copy">copy</a>
@@ -1509,8 +1556,31 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
- &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="DrissionPage._pages.mix_tab"></a>
+  <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_pages/mix_tab.py" type="text/plain"><tt>DrissionPage._pages.mix_tab</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
+ &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
+ &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
+ &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
+ &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
 
   </div>
 
@@ -1522,12 +1592,11 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
- &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
- &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#requests">requests</a>
@@ -1540,7 +1609,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage">DrissionPage</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
  &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
   </div>
@@ -1554,10 +1623,11 @@ imported by:
 imports:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
  &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
- &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
+ &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
+ &#8226;   <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
  &#8226;   <a href="#DrissionPage._pages">DrissionPage._pages</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
 
@@ -1582,6 +1652,7 @@ imports:
 imported by:
     <a href="#DrissionPage._units.actions">DrissionPage._units.actions</a>
  &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
+ &#8226;   <a href="#DrissionPage._units.console">DrissionPage._units.console</a>
  &#8226;   <a href="#DrissionPage._units.cookies_setter">DrissionPage._units.cookies_setter</a>
  &#8226;   <a href="#DrissionPage._units.downloader">DrissionPage._units.downloader</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
@@ -1605,7 +1676,6 @@ imports:
     <a href="#DrissionPage._functions.keys">DrissionPage._functions.keys</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._units">DrissionPage._units</a>
- &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
  &#8226;   <a href="#time">time</a>
 
   </div>
@@ -1626,6 +1696,7 @@ imports:
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._units">DrissionPage._units</a>
  &#8226;   <a href="#DrissionPage.errors">DrissionPage.errors</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#time">time</a>
 
   </div>
@@ -1638,11 +1709,30 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="DrissionPage._units.console"></a>
+  <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_units/console.py" type="text/plain"><tt>DrissionPage._units.console</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#DrissionPage._units">DrissionPage._units</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#time">time</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="DrissionPage._units.cookies_setter"></a>
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_units/cookies_setter.py" type="text/plain"><tt>DrissionPage._units.cookies_setter</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
+    <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._units">DrissionPage._units</a>
 
   </div>
@@ -1669,7 +1759,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
 
   </div>
 
@@ -1786,8 +1876,7 @@ imported by:
   <a target="code" href="///F:/workspace/python/doc_demo/.venv/Lib/site-packages/DrissionPage/_units/setter.py" type="text/plain"><tt>DrissionPage._units.setter</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#DrissionPage._functions.settings">DrissionPage._functions.settings</a>
- &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
+    <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._units">DrissionPage._units</a>
  &#8226;   <a href="#DrissionPage._units.cookies_setter">DrissionPage._units.cookies_setter</a>
@@ -1799,11 +1888,13 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
+ &#8226;   <a href="#DrissionPage._pages.mix_tab">DrissionPage._pages.mix_tab</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._pages.web_page">DrissionPage._pages.web_page</a>
 
@@ -1823,7 +1914,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
 
@@ -1846,7 +1938,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
+ &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
@@ -1867,7 +1960,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.none_element">DrissionPage._elements.none_element</a>
@@ -1876,8 +1969,6 @@ imported by:
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
- &#8226;   <a href="#DrissionPage._units.actions">DrissionPage._units.actions</a>
  &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
@@ -8935,10 +9026,10 @@ imported by:
     <a href="#DataRecorder.style.cell_style">DataRecorder.style.cell_style</a>
  &#8226;   <a href="#DownloadKit._funcs">DownloadKit._funcs</a>
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
+ &#8226;   <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
  &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_frame">DrissionPage._pages.chromium_frame</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_tab">DrissionPage._pages.chromium_tab</a>
- &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
  &#8226;   <a href="#_sre">_sre</a>
  &#8226;   <a href="#argparse">argparse</a>
@@ -9222,7 +9313,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
+    <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#apscheduler.executors.base">apscheduler.executors.base</a>
  &#8226;   <a href="#apscheduler.executors.base_py3">apscheduler.executors.base_py3</a>
@@ -13530,7 +13621,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
+    <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#http">http</a>
  &#8226;   <a href="#requests.compat">requests.compat</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -13731,6 +13822,7 @@ imports:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib._bootstrap">importlib._bootstrap</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#warnings">warnings</a>
 
@@ -13882,7 +13974,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#importlib.abc">importlib.abc</a>
+    <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#packaging.tags">packaging.tags</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
@@ -14768,7 +14861,9 @@ imported by:
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
+ &#8226;   <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
+ &#8226;   <a href="#DrissionPage._units.console">DrissionPage._units.console</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
  &#8226;   <a href="#json.decoder">json.decoder</a>
@@ -27502,7 +27597,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DownloadKit._funcs">DownloadKit._funcs</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#PIL.BlpImagePlugin">PIL.BlpImagePlugin</a>
@@ -28231,7 +28326,7 @@ imported by:
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DownloadKit.mission">DownloadKit.mission</a>
  &#8226;   <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
  &#8226;   <a href="#DrissionPage._configs.options_manage">DrissionPage._configs.options_manage</a>
  &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
@@ -28240,8 +28335,8 @@ imported by:
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
+ &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
  &#8226;   <a href="#DrissionPage._units.downloader">DrissionPage._units.downloader</a>
  &#8226;   <a href="#DrissionPage._units.screencast">DrissionPage._units.screencast</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
@@ -28490,8 +28585,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
+ &#8226;   <a href="#DrissionPage._functions.keys">DrissionPage._functions.keys</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#numpy.lib._utils_impl">numpy.lib._utils_impl</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
@@ -28741,7 +28837,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
@@ -29171,6 +29267,7 @@ imports:
 imported by:
     <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
+ &#8226;   <a href="#DrissionPage._units.console">DrissionPage._units.console</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
@@ -29270,6 +29367,7 @@ imported by:
  &#8226;   <a href="#DownloadKit._funcs">DownloadKit._funcs</a>
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._configs.chromium_options">DrissionPage._configs.chromium_options</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._elements.session_element">DrissionPage._elements.session_element</a>
@@ -29658,10 +29756,11 @@ imported by:
     <a href="#DownloadKit._funcs">DownloadKit._funcs</a>
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DownloadKit.setter">DownloadKit.setter</a>
+ &#8226;   <a href="#DrissionPage._base.base">DrissionPage._base.base</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.__version__">requests.__version__</a>
@@ -29757,7 +29856,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#requests.sessions">requests.sessions</a>
+    <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
+ &#8226;   <a href="#requests.sessions">requests.sessions</a>
  &#8226;   <a href="#requests_file">requests_file</a>
 
   </div>
@@ -30052,6 +30152,7 @@ imported by:
     <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DownloadKit.mission">DownloadKit.mission</a>
  &#8226;   <a href="#DrissionPage._configs.session_options">DrissionPage._configs.session_options</a>
+ &#8226;   <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#DrissionPage._units.setter">DrissionPage._units.setter</a>
@@ -36427,7 +36528,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#DataRecorder.base">DataRecorder.base</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._units.downloader">DrissionPage._units.downloader</a>
@@ -37645,11 +37746,11 @@ imported by:
     <a href="#DataRecorder.base">DataRecorder.base</a>
  &#8226;   <a href="#DataRecorder.style.cell_style">DataRecorder.style.cell_style</a>
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._functions.tools">DrissionPage._functions.tools</a>
  &#8226;   <a href="#DrissionPage._pages.chromium_base">DrissionPage._pages.chromium_base</a>
- &#8226;   <a href="#DrissionPage._pages.chromium_page">DrissionPage._pages.chromium_page</a>
  &#8226;   <a href="#DrissionPage._units.screencast">DrissionPage._units.screencast</a>
  &#8226;   <a href="#_threading_local">_threading_local</a>
  &#8226;   <a href="#apscheduler.schedulers.background">apscheduler.schedulers.background</a>
@@ -37733,7 +37834,7 @@ imported by:
  &#8226;   <a href="#DownloadKit._funcs">DownloadKit._funcs</a>
  &#8226;   <a href="#DownloadKit.downloadKit">DownloadKit.downloadKit</a>
  &#8226;   <a href="#DownloadKit.mission">DownloadKit.mission</a>
- &#8226;   <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+ &#8226;   <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#DrissionPage._elements.chromium_element">DrissionPage._elements.chromium_element</a>
  &#8226;   <a href="#DrissionPage._functions.browser">DrissionPage._functions.browser</a>
@@ -37746,6 +37847,7 @@ imported by:
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#DrissionPage._units.actions">DrissionPage._units.actions</a>
  &#8226;   <a href="#DrissionPage._units.clicker">DrissionPage._units.clicker</a>
+ &#8226;   <a href="#DrissionPage._units.console">DrissionPage._units.console</a>
  &#8226;   <a href="#DrissionPage._units.downloader">DrissionPage._units.downloader</a>
  &#8226;   <a href="#DrissionPage._units.listener">DrissionPage._units.listener</a>
  &#8226;   <a href="#DrissionPage._units.screencast">DrissionPage._units.screencast</a>
@@ -37828,7 +37930,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._functions.web">DrissionPage._functions.web</a>
+    <a href="#DrissionPage._functions.cookies">DrissionPage._functions.cookies</a>
  &#8226;   <a href="#DrissionPage._pages.session_page">DrissionPage._pages.session_page</a>
  &#8226;   <a href="#tldextract">tldextract</a>
  &#8226;   <a href="#tldextract._version">tldextract._version</a>
@@ -41056,7 +41158,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#DrissionPage._base.browser">DrissionPage._base.browser</a>
+    <a href="#DrissionPage._base.chromium">DrissionPage._base.chromium</a>
  &#8226;   <a href="#DrissionPage._base.driver">DrissionPage._base.driver</a>
  &#8226;   <a href="#websocket">websocket</a>
  &#8226;   <a href="#websocket._abnf">websocket._abnf</a>
