@@ -1,13 +1,25 @@
 from DrissionPage import Chromium, ChromiumOptions
+import os
+import logging
+import datetime
 
-# 创建多个配置对象，每个指定不同的端口号和用户文件夹路径
-co1 = ChromiumOptions().set_paths(local_port=9111, user_data_path=r'D:\data1')
-# co2 = ChromiumOptions().set_paths(local_port=9222, user_data_path=r'D:\data2')
 
-# 创建多个页面对象
-tab1 = Chromium(addr_or_opts=co1).latest_tab
-# tab2 = Chromium(addr_or_opts=co2).latest_tab
+# 获取当前日期
+current_date = datetime.date.today().strftime('%Y-%m-%d')
+# 获取当前文件路径
+current_dir = os.path.dirname(os.path.realpath(__file__))
+# 创建日志记录
+log_path = os.path.join(current_dir, f'sunday_auto_payment-{current_date}.log')
+# 日志配置
+logging.basicConfig(filename=log_path, level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    encoding='utf-8')
 
-# 每个页面对象控制一个浏览器
-tab1.get('https://DrissionPage.cn')
-# tab2.get('https://www.baidu.com')
+
+try:
+    a = 3
+    b = 0
+    a/b
+except Exception as e:
+    logging.info("无法支付订单，请检查订单是否已取消", e)
