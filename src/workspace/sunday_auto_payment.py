@@ -19,6 +19,8 @@ logging.basicConfig(filename=log_path, level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     encoding='utf-8')
+# 用于存储无法支付的订单 URL
+failed_urls = set()
 
 
 # pip install requests
@@ -37,7 +39,7 @@ def executor():
     response_json = response.json()
 
     # 打印响应信息
-    logging.info(response_json, log_path)
+    logging.info(response_json)
 
     # 获取响应主题
     url_dictionary = response_json['body']
@@ -62,6 +64,11 @@ def executor():
 
         logging.info("正在为......")
 
+        # 如果 URL 已在失败集合中，跳过
+        if url in failed_urls:
+            logging.info("跳过无法支付的订单 URL: %s", url)
+            continue
+
         # 打开付款链接
         latest_tab.get(url)
         browser.wait(2)
@@ -73,7 +80,7 @@ def executor():
                 latest_tab.ele('@class=fm-button fm-submit password-login  button-low-light').click()
                 browser.wait(2)
         except Exception as e:
-            logging.info("无法登录指alibaba管理后台，请检查当前PC是否验证账号并设置记住密码", e)
+            logging.info("无法登录指alibaba管理后台，请检查当前PC是否验证账号并设置记住密码： %s", str(e))
 
         try:
             # 获取账期支付DIV
@@ -88,7 +95,8 @@ def executor():
             button.click()
             browser.wait(2)
         except Exception as e:
-            logging.info("无法支付订单，请检查订单是否已取消", e)
+            failed_urls.add(url)
+            logging.info("无法支付订单，请检查订单是否已取消: %s", str(e))
 
 
 # corn触发器每周日八点到23点，每隔而是分钟执行一次，并发数为1，如果上次任务未执行完毕则废弃
