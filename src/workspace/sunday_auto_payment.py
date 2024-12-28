@@ -62,7 +62,7 @@ def executor():
     # 遍历链接单个付款
     for url in urls_list:
 
-        logging.info("正在为......")
+        logging.info(f'正在为${url.split('=')[1]}付款......')
 
         # 如果 URL 已在失败集合中，跳过
         if url in failed_urls:
@@ -112,8 +112,8 @@ def auto_payment_scheduler():
 
 
 # 创建并启动调度器
-if __name__ == '__main__':
-    auto_payment_scheduler()
+# if __name__ == '__main__':
+    # auto_payment_scheduler()
 
 # 直接触发任务用于测试
-# executor()
+auto_payment_scheduler()

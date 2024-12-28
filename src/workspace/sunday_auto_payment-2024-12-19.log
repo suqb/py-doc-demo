@@ -1,0 +1,12 @@
+2024-12-19 20:17:56 - INFO - {'body': {'urls': ['https://trade.1688.com/order/cashier.htm?orderId=4172343987586901415']}, 'businessId': None, 'callStartTime': None, 'callUseTime': None, 'errors': [], 'exceptionCode': None, 'location': None, 'message': None, 'status': '200', 'success': True}
+2024-12-19 20:17:57 - INFO - 正在为$4172343987586901415付款......
+2024-12-19 20:18:02 - INFO - 无法支付订单，请检查订单是否已取消: 与页面的连接已断开。
+2024-12-19 20:18:30 - INFO - {'body': {'urls': ['https://trade.1688.com/order/cashier.htm?orderId=4172343987586901415']}, 'businessId': None, 'callStartTime': None, 'callUseTime': None, 'errors': [], 'exceptionCode': None, 'location': None, 'message': None, 'status': '200', 'success': True}
+2024-12-19 20:18:30 - INFO - 正在为$4172343987586901415付款......
+2024-12-19 20:18:46 - INFO - 无法支付订单，请检查订单是否已取消: 
+没有找到元素。
+method: ele()
+args: {'locator': '@data-channel=account_period', 'index': 1, 'timeout': 10}
+2024-12-19 20:20:17 - INFO - {'body': {'urls': ['https://trade.1688.com/order/cashier.htm?orderId=4172343987586901415']}, 'businessId': None, 'callStartTime': None, 'callUseTime': None, 'errors': [], 'exceptionCode': None, 'location': None, 'message': None, 'status': '200', 'success': True}
+2024-12-19 20:20:17 - INFO - 正在为$4172343987586901415付款......
+2024-12-19 20:20:32 - INFO - 无法支付订单，请检查订单是否已取消: 与页面的连接已断开。
