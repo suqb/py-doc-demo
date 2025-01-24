@@ -62,7 +62,7 @@ def executor():
     # 遍历链接单个付款
     for url in urls_list:
 
-        logging.info(f'正在为${url.split('=')[1]}付款......')
+        logging.info(f'正在为{url.split('=')[1]}付款......')
 
         # 如果 URL 已在失败集合中，跳过
         if url in failed_urls:
@@ -90,7 +90,7 @@ def executor():
             browser.wait(2)
 
             # 获取支付按钮
-            button = latest_tab.ele('@class=next-btn next-small next-btn-primary pay-btn')
+            button = latest_tab.ele('@class=pay-btn pc')
             # 点击支付
             button.click()
             browser.wait(2)
@@ -116,4 +116,5 @@ def auto_payment_scheduler():
     # auto_payment_scheduler()
 
 # 直接触发任务用于测试
-auto_payment_scheduler()
+# auto_payment_scheduler()
+executor()
