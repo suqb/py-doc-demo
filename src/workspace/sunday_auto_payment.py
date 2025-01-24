@@ -116,5 +116,5 @@ def auto_payment_scheduler():
     # auto_payment_scheduler()
 
 # 直接触发任务用于测试
-# auto_payment_scheduler()
-executor()
+auto_payment_scheduler()
+# executor()
